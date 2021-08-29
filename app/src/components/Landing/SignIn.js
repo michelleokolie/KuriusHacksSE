@@ -9,7 +9,7 @@ const SignIn = () => {
 
     return (
         <form onSubmit={e => {handleSubmit(e)}} className="passwordInputContainer" style={{"display":"block"}}>
-            <input value={password} onChange={e => setPassword(e.target.value)}  type="password" name="password" id="passwordInput" />
+            <input placeholder="Enter Password" value={password} onChange={e => setPassword(e.target.value)}  type="password" name="password" id="passwordInput" />
         </form>
     )
 }

@@ -7,6 +7,7 @@ import {
     Link
 } from "react-router-dom";
 import Application from "../Application/Application";
+import backgroundImage from "../../assets/background.png";
 
 const Landing = () => {
     const [admin, showAdmin] = useState(false)
@@ -22,7 +23,7 @@ const Landing = () => {
                     return (
                         <div className="landingContainer">
                             <div className="mainInfo">
-                                <img src="app\public\background.png" alt="landing page illustration" className="landingPageImage"></img>
+                                <img src={backgroundImage} alt="landing page illustration" className="landingPageImage"></img>
                                 <p className="landingPageTxt">
                                     Get instant assessment reviews from Top Professionals with your next Nobel Prize Worthy Research.
                                 </p>

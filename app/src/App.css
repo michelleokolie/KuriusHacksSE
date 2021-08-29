@@ -19,7 +19,9 @@ body {
     justify-content: space-between;
     align-items: baseline;
     margin: 15px 80px;
-    background: linear-gradient(rgba(255, 255, 255, 0.534), rgba(0, 0, 0, 0), 90deg)
+    padding: 0 10px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #FFFFFF 6.05%, rgba(255, 255, 255, 0) 93.94%);
 }
 
 .navItem {
@@ -35,11 +37,14 @@ body {
 }
 
 .landingPageImage {
-    margin: 71px 341px;
+    margin: 20px auto;
 }
 
 .mainInfo {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .landingPageTxt {
@@ -53,6 +58,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding-bottom: 50px;
 }
 
 .button {
@@ -85,8 +91,11 @@ body {
 }
 
 #passwordInput {
-    border-radius: 10px;
+    border-radius: 5px;
     margin: 15px;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #023047;
 }
 
 .applyTextContainer {
@@ -233,4 +242,85 @@ body {
 .resetButton:hover {
     background: #ffb703;
     color: #fff;
+}
+
+.successContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+.successBackground {
+    border-radius: 50%;
+    background: linear-gradient(55.83deg, #8ECAE6 -24.65%, rgba(255, 255, 255, 0.2) 74.93%);
+    margin: 90px 0;
+    height: 300px;
+    width: 300px;
+    border: 1px solid #FFFFFF;
+    backdrop-filter: blur(4px);
+    position: relative;
+}
+
+.successHeader {
+    font-size: 36px;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+.successTxt {
+    font-size: 24px;
+    position: absolute;
+    bottom: 33%;
+    font-weight: 500;
+    color: #023047;
+    padding-top: 25px;
+}
+
+.successTxtThin {
+    font-weight: 300;
+}
+
+.blueHighlight {
+    color: #023047;
+    font-weight: bolder;
+}
+
+table {
+    width: 100%;
+}
+
+tbody {
+    width: 100%;
+}
+
+thead {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+table tr {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+}
+
+table th,
+table td {
+    width: 16.66%;
+}
+
+.adminSpecialButton {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #ffb703;
+    color: #FFB703;
+}
+
+table tr td input:checked {
+    background: red;
 }
