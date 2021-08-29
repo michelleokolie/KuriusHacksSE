@@ -1,6 +1,10 @@
 import './App.css';
 import Admin from './components/Admin/Admin';
 
+import Navbar from './components/Navbar/Navbar';
+
+import Landing from './components/Landing/Landing';
+
 // import Landing from './components/Landing/Landing';
 // import Navbar from './components/Navbar/Navbar';
 
